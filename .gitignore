@@ -1,0 +1,40 @@
+# IDE metadata
+.metadata/
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# Compiled files
+target/
+*.class
+*.jar
+*.war
+
+# Logs
+*.log
+
+# Cache files
+*.cache
+*.dat
+
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
+
+# Spring Boot
+spring-boot-*.pid
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Docker
+.env

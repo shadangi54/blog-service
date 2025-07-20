@@ -1,0 +1,26 @@
+services:
+  blog-service:
+    image: "shadangi54/blog-service:1.0"
+    container_name: "blog-service"
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATA_REDIS_HOST=redis
+      - SPRING_DATA_REDIS_PORT=6379
+
+    depends_on:
+      - redis
+    networks:
+      - blog-network
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - blog-network
+
+networks:
+  blog-network:
+    driver: bridge
