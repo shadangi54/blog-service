@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "f272c8ad-c6c7-4264-8a00-fb24807256da",
+		"name": "BLOG-APPLICATION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "11267482"
+	},
+	"item": [
+		{
+			"name": "GET-BLOGS",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "BLOG-BY-ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE-BLOG",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Spring Boot with Redis\",\r\n  \"content\": \"This post explains how to use Redis with Spring Boot.\",\r\n  \"author\": \"Shadangi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/blog-service/blogs"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-BLOG",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Spring Boot with Redis\",\r\n  \"content\": \"This post explains how to use Redis with Spring Boot.\",\r\n  \"author\": \"Shadangi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/blog-service/blogs"
+			},
+			"response": []
+		},
+		{
+			"name": "BLOG-DELETE",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
